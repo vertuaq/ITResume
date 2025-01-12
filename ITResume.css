@@ -1,0 +1,42 @@
+/* Basic reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme colors */
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.theme-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-switch .slider {
+    background: linear-gradient(to right, #f1c40f, #f39c12);
+    border-radius: 50px;
+}
+
+/* Add more styles for sections and buttons */
